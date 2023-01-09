@@ -8,7 +8,7 @@ import program.api.majorAssignment.domain.Authority;
 import program.api.majorAssignment.exception.BusinessException;
 import program.api.majorAssignment.service.AuthorityService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/authority")

@@ -6,7 +6,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
-import javax.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 public class Authority {
@@ -16,8 +16,6 @@ public class Authority {
     private String userName;
     @NotBlank(message = "authority is mandatory")
     private String authority;
-    //    @Id
-//    @NotBlank(message = "userName is mandatory")
     @ManyToOne(optional = false)
     @JoinColumn(name = "author_username", referencedColumnName = "username")
     private Author author;

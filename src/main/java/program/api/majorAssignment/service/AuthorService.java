@@ -8,7 +8,7 @@ import program.api.majorAssignment.domain.Author;
 import program.api.majorAssignment.exception.BusinessException;
 import program.api.majorAssignment.repository.AuthorRepository;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.Optional;
 
 @Service

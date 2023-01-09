@@ -8,7 +8,7 @@ import program.api.majorAssignment.domain.Post;
 import program.api.majorAssignment.exception.BusinessException;
 import program.api.majorAssignment.service.PostService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 import java.util.List;
 
 @RestController

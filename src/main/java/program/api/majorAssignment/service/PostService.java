@@ -47,7 +47,6 @@ public class PostService {
             oldPost.get().setDescription(post.getDescription());
             oldPost.get().setPostDate(post.getPostDate());
             oldPost.get().setContent(post.getContent());
-            oldPost.get().setAuthor(post.getAuthor());
             return postRepository.save(oldPost.get());
         }
         throw new BusinessException("400 Bad request", "Update post failed");

@@ -8,7 +8,7 @@ import program.api.majorAssignment.domain.Author;
 import program.api.majorAssignment.exception.BusinessException;
 import program.api.majorAssignment.service.AuthorService;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping(value = "/author")
