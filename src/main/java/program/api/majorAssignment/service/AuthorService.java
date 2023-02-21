@@ -24,7 +24,7 @@ public class AuthorService {
     public Boolean checkIfUserHasExited(String username) {
         log.info("check if {} has exited", username);
         if (authorRepository.existsById(username)) {
-            log.info("{} has exited", username);
+            log.error("{} has exited", username);
             return true;
         } else {
             return false;
